@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior:smooth;
+}
+.home{
+    min-height: 88.5vh;
+    background-image: url('./art_images/art_body.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: #6b69695e;
+}
+nav ul{
+    width: 100%;
+    height: 11vh;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+nav a:hover{
+    background-color: #f0f0f08c;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+ul li a span::first-letter{
+    font-size: 150px;
+}
+ul li a span:nth-child(1){
+  font-size: 60px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #ffffff97;
+    backdrop-filter:blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.542);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+    
+}
+.menubtn{
+    display: none;
+}
+@media (max-width:800px) {
+        .hideOnMobile{
+             display: none;
+        }
+        .menubtn{
+            display: block;
+        }
+}
+@media (max-width:452px) {
+        .sidebar{
+            width: 100%;
+        }
+        ul li a span::first-letter{
+            font-size: 30px;
+        }
+        ul li a span:nth-child(1){
+            font-size: 29px;
+          }
+}
+.brightening{
+    height: 100vh;
+    flex-wrap: wrap;
+
+}
+.brightening h1{
+    text-align: center;
+    padding-top:2%;
+    font-size: 70px;
+}
+.wall-frames{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.frame{
+    height: 800px;
+    width: 900px;
+    margin-top: 1%;
+    margin-bottom:3%;
+}
+#frame{
+height: 650px;
+width: 900px;
+background-color: black;
+margin-top: 5%;
+margin-bottom:3%;
+background-image: url('./art_images/art-wall-tree.jpg');
+background-repeat: no-repeat;
+background-position: center;
+object-fit: cover;
+border: 30px ridge black;
+ 
+}
+
+.frame2{
+    width: 300px;
+    height: 300px;
+    margin-top: 12%;
+    margin-left: 28%;
+}
+.frame2 a{
+    text-decoration: none;
+    border: 2px solid gray;
+    padding: 15px 80px;
+    margin-left:12%;
+    font-size: 30px;
+    color: black;
+}
+.frame2 h1{
+    padding:15%;
+}
+.frame2 p{
+   font-size: 60px;
+   text-align: center;
+}
+.frame2 a:hover{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.801) ;
+}
+.frame2 img{
+    width: 300px;
+    height:300px ;
+    background-position:center;
+    border:10px ridge black;
+    
+}
+
+
+@media (max-width:452px) {
+    .wall-frames{
+        flex-wrap: wrap;
+    }
+    .frame2 {
+        margin-left:8%;
+    }
+}
+
+
+.ideas{
+    height: 100vh;
+    background-color: rgb(193, 194, 194);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 20px;
+}
+.idea{
+    background-color: black;
+    height: 600px;
+    width: 600px;
+}
+@media (max-width:400) {
+    .ideas{
+        flex-wrap: wrap;
+        margin-top: 990%;
+    }
+    .idea{
+        margin-top: 990%;
+    }
+}
+.hero{
+    height: 100vh;
+}
